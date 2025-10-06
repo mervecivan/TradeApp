@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Loader2 } from 'lucide-react';
 
 import { useCryptoData } from "@/hooks/useCryptoData"; 
@@ -72,7 +71,7 @@ export function StockControl() {
     );
   }
 
-  const currentStock = cryptoData[0];
+  //const currentStock = cryptoData[0];
   const currentPrice = form.watch("price");
   const currentTicker = form.watch("code");
   const currentLogo = currentTicker[0] || 'N';
