@@ -1,5 +1,7 @@
 // API functions
+
 const API_BASE_URL = "https://api.coingecko.com/api/v3";
+
 export interface CoinData {
     id: string
     symbol: string
