@@ -26,14 +26,13 @@ UI Library	shadcn/ui	Pre-styled, accessible UI components
 Form Management	React Hook Form + Zod	Form state and schema validation
 API Client	Fetch API (Native)	Zero-dependency HTTP requests
 
-E-Tablolar'a aktar
 🚀 Setup and Run
+
 Follow these steps to get the project running on your local machine.
 
 1. Install Dependencies
 Navigate to the project's root directory and install all necessary packages:
 
-Bash
 
 # Navigate to your project folder
 cd my-crypto-dashboard 
@@ -75,8 +74,6 @@ export default defineConfig({
 
 Once setup is complete, launch the development server:
 
-Bash
-
 npm run dev
 
 The application will be accessible at the address displayed in your console, usually http://localhost:5173.
@@ -96,7 +93,8 @@ src/
 ├── lib/
 │   └── utils.ts            # Utility functions (cn for Tailwind merging)
 └── main.tsx                # Application entry point
-⚠️ Known Limitations
+
+## ⚠️ Known Limitations
 Symbolic Charting: The "Chart" column in the Watchlist is purely symbolic. It uses the 24-hour change to decide between a rising (green) or falling (red) SVG path, as historical data fetching was not implemented.
 
 Rate Limiting: As a public API, CoinGecko's endpoint has rate limits. Frequent refreshing during development may temporarily block data access.
