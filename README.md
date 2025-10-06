@@ -41,7 +41,10 @@ cd my-crypto-dashboard
 # Install dependencies
 
 npm install
+
+
 2. Configure API Proxy (Crucial Step!)
+
 To bypass CORS (Cross-Origin Resource Sharing) restrictions imposed by the CoinGecko API and prevent the common TypeError: Failed to fetch, a Vite Proxy is essential for development.
 
 Ensure your vite.config.ts file is configured as follows:
@@ -66,12 +69,16 @@ export default defineConfig({
     },
   },
 });
+
+
 3. Start the Application
+
 Once setup is complete, launch the development server:
 
 Bash
 
 npm run dev
+
 The application will be accessible at the address displayed in your console, usually http://localhost:5173.
 
 ## 📂 Project Structure
