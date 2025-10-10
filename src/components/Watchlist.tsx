@@ -2,7 +2,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { Button } from "./ui/button";
 import { Loader2, ArrowUp, ArrowDown } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useCryptoData } from "@/hooks/useCryptoData";
+import { useCryptoData_ } from "@/hooks/useCryptoData_";
 
 const getLogoColor = (symbol: string) => {
   const colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500", "bg-indigo-500"];
@@ -14,7 +14,7 @@ const getLogoColor = (symbol: string) => {
 };
 
 const Watchlist = () => {
-  const { data: cryptoData, loading, error } = useCryptoData();
+  const { data: cryptoData, loading, error } = useCryptoData_();
 
   if (loading) {
     return (

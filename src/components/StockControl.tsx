@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from 'lucide-react';
 
-import { useCryptoData } from "@/hooks/useCryptoData";
+import { useCryptoData_ } from "@/hooks/useCryptoData_";
 
 const formSchema = z.object({
   code: z.string().min(1, { message: "Stok kodu gereklidir." }).max(5, { message: "Kod en fazla 5 karakter olmalıdır." }),
@@ -22,7 +22,7 @@ const formSchema = z.object({
 type StockControlValues = z.infer<typeof formSchema>;
 
 export function StockControl() {
-  const { data: cryptoData, loading, error } = useCryptoData();
+  const { data: cryptoData, loading, error } = useCryptoData_();
 
   const form = useForm<StockControlValues>({
     resolver: zodResolver(formSchema),

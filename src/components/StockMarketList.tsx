@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUp, ArrowDown, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useCryptoData } from "@/hooks/useCryptoData";
+import { useCryptoData_ } from "@/hooks/useCryptoData_";
 
 const getLogoColor = (symbol: string) => {
     const colors = ["bg-red-500", "bg-blue-500", "bg-yellow-500", "bg-green-500", "bg-indigo-500"];
@@ -13,7 +13,7 @@ const getLogoColor = (symbol: string) => {
 };
 
 export function StockMarketList() {
-    const { data: cryptoData, loading, error } = useCryptoData();
+    const { data: cryptoData, loading, error } = useCryptoData_();
 
     if (loading) {
         return (
