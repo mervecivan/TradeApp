@@ -18,7 +18,7 @@ function App() {
             <div className="flex items-center space-x-2 w-1/3">
             <Search className="h-5 w-5 text-gray-500"/>
             <Input
-            placeholder="Enter Your Email Here"
+            placeholder="Search stocks, news, and more"
             className="bg-gray-900 border-none placeholder:text-gray-500 focus-visible:ring-0 focus-visible:ring-offset-0"
              />
             </div>
